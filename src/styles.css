@@ -1,0 +1,130 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.app {
+  width: 450px;
+}
+
+h1 {
+  color: white;
+  font-size: 7rem;
+  margin-bottom: 0;
+}
+
+.js-clock {
+  text-align: center;
+}
+
+h1:hover,
+.js-clock:hover {
+  transition: 0.5s color ease-in-out;
+  color: #55efc4;
+  }
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+
+.showing {
+  display: block;
+}
+
+.js-weather {
+  font-weight: 200;
+}
+
+.hide {
+  display: none;
+}
+
+.js-greeting {
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+  font-size: 2rem;
+}
+
+li > span:hover,
+.js-greeting:hover {
+  transition: .3s color ease-in-out;
+  color: #fdcb6e;
+}
+
+.toDoForm {
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  /*margin: 8px 0;*/
+  /*box-sizing: border-box;*/
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+
+input, select, textarea{
+  transition: .3s color ease-in-out;
+  color: #fff;
+}
+
+
+textarea:hover, input:hover {
+  border-bottom: 2px solid #fdcb6e;
+}
+
+textarea:focus, input:focus {
+    color: #fff;
+    outline: none;
+    transition: .3s color ease-in-out;
+    border-bottom: 2px solid #55efc4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li > span {
+  margin-left: 10px;
+  font-weight: 300;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
